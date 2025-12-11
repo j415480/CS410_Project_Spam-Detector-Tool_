@@ -156,7 +156,7 @@ def main():
             print("Thanks for checking out my CS410 project! Goodbye!")
             break
         else:
-            print("Invalid choice. Please enter 'r', 'b', or 'q'.")
+            print("Invalid choice. Please enter 'r', 's', or 'q'.")
 
 if __name__ == "__main__":
     main()
