@@ -29,9 +29,10 @@ Main components:
 ## Setup
 
 1. Open project folder ```cd ~/CS410_Project_Spam-Detector-Tool_-main``` (if ZIP downloaded)
-2. In project terminal: ```pip install -r requirements.txt```
-3. In project terminal: ```python main.py```
-4. Interact with the terminal as requested by app
+    a. If desired, set up VENV to install dependents locally, else dependents will install globally
+3. In project terminal: ```pip install -r requirements.txt```
+4. In project terminal: ```python main.py```
+5. Interact with the terminal as requested by app
 
 ## Project Tree
 ```
@@ -61,4 +62,5 @@ tqdm         #neat little progress bar during data cleaning
 
 ## Credits
 https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
+
 
