@@ -28,18 +28,37 @@ Main components:
 
 ## Setup
 
-1. Open project folder
-2. In project terminal: pip install -r requirements.txt
-3. In project terminal: python main.py
+1. Open project folder ```cd ~/CS410_Project_Spam-Detector-Tool_-main``` (if ZIP downloaded)
+2. In project terminal: ```pip install -r requirements.txt```
+3. In project terminal: ```python main.py```
 4. Interact with the terminal as requested by app
+
+## Project Tree
+```
+CS410_Project_Spam-Detector-Tool_-main/
+├─ data/
+│  └─ kaggle-dataset.csv  # SMS Spam Collection dataset from Kaggle
+├─ src/
+│  ├─ bm25_searcher.py    # BM25 search to rank texts by query relevance
+│  ├─ data_loader.py      # loads CSV into Pandas DF, build targets and labels
+│  ├─ models.py           # TF-IDF implementation, model trainer and evaluator, results
+│  └─ text_preprocess.py  # clean raw CSV text
+├─ main.py                # implements pipeline - load, preprocess, split, train, show results
+├─ README.md              # overview
+└─ requirements.txt       # dependencies needed for project
+```
+
+
+## Packages used:
+```
+pandas       #dataframes and data loading
+numpy        #math operations
+scikit-learn #model processing, TF-IDF extraction, train/test data split
+rank-bm25    #bm25 retrieval
+kagglehub    #connecting to kaggle if local dataset not found
+tqdm         #neat little progress bar during data cleaning
+```
 
 ## Credits
 https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
 
-## Packages used:
-- pandas - dataframes and data loading
-- numpy - math operations
-- scikit-learn - model processing, TF-IDF extraction, train/test data split
-- rank-bm25 - bm25 retrieval
-- kagglehub - connecting to kaggle if local dataset not found
-- tqdm - neat little progress bar during data cleaning
